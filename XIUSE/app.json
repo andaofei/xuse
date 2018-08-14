@@ -13,11 +13,12 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "color": "#bfbfbf",
-    "selectedColor": "#349FEC",
+    "color": "rgba(72,78,91,1)",
+    "selectedColor": "rgba(66,146,157,1)",
     "borderStyle": "white",
     "backgroundColor": "#fff",
     "box-shadow": "0 0 6px 0",
+    "padding": "10px 0",
     "list": [
       {
         "pagePath": "pages/home/index",
@@ -30,6 +31,18 @@
         "iconPath": "icon/TAB我要加工@2x.png",
         "selectedIconPath": "icon/TAB我要加工@2x.png",
         "text": "我要加工"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "icon/TAB我要安装@2x.png",
+        "selectedIconPath": "icon/TAB我要安装@2x.png",
+        "text": "我要安装"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "icon/ATB个人中心@2x.png",
+        "selectedIconPath": "icon/ATB个人中心@2x.png",
+        "text": "个人中心"
       }
     ]
   }

@@ -9,43 +9,59 @@ Page({
     itemList: [
       {
         name: '我要加工',
-        path: './images/加工@2x.png'
+        path: './images/加工@2x.png',
+        id: 1
       },
       {
         name: '我要安装',
-        path: './images/加工@2x.png'
+        path: './images/安装@2x.png',
+        id: 2
       },
       {
         name: '购买辅料',
-        path: './images/加工@2x.png'
+        path: './images/购买辅料@2x.png',
+        id: 3
       },
       {
         name: '加工方案',
-        path: './images/加工@2x.png'
+        path: './images/加工方案@2x.png',
+        id: 4
       },
       {
         name: '优惠券',
-        path: './images/加工@2x.png'
+        path: './images/优惠券@2x.png',
+        id: 5
       },
       {
         name: '我要验收',
-        path: './images/加工@2x.png'
+        path: './images/我要验收@2x.png',
+        id: 6
       },
       {
         name: '整体方案',
-        path: './images/加工@2x.png'
+        path: './images/整体方案@2x.png',
+        id: 7
       },
       {
         name: '进入嗅色',
-        path: './images/加工@2x.png'
+        path: './images/加工@2x.png',
+        id: 8
       },
       {
         name: '服务商',
-        path: './images/加工@2x.png'
+        path: './images/进入嗅色@2x.png',
+        id: 9
       }
-    ]
+    ],
+    currentItem: ''
   },
-
+  btnAction(options) {
+    let that = this
+    let id = options.currentTarget.dataset.id;
+    that.setData({
+      'currentItem': id
+    }) 
+  },
   /**
    * 生命周期函数--监听页面加载
    */
