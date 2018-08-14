@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/login/index",
+    "pages/home/index",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/register/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "兜兜",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#349FEC",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "box-shadow": "0 0 6px 0",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "iconPath": "icon/TAB首页@2x.png",
+        "selectedIconPath": "icon/TAB首页@2x.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "icon/TAB我要加工@2x.png",
+        "selectedIconPath": "icon/TAB我要加工@2x.png",
+        "text": "我要加工"
+      }
+    ]
+  }
+}

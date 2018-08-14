@@ -1,0 +1,19 @@
+<!--pages/home/index.wxml-->
+<view class='cantiner'>
+  <view class='banner'>
+      <image src='{{banner}}' class='banner_img'> </image>
+  </view>
+
+  <view class='item-box'>
+        <view class='item' wx:for="{{itemList}}" wx:key="index">
+
+        <view class='item_middle'>
+          <text> </text>
+          <image class='item_img' src='{{item.path}}'></image>
+          <text> </text>
+        </view>
+            
+            <text class='item_text'>{{item.name}}</text>
+        </view>
+  </view>
+</view>

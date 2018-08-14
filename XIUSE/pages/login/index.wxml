@@ -1,0 +1,55 @@
+<!--pages/login/index.wxml-->
+<view class='container'>
+    <view class='logo'>
+         <text>   </text>
+              <image class='item-img' src="./images/logo@2x.png" ></image>
+               <text>  </text>
+    </view>
+
+    <view class='wrapper'>
+       <view class='box'>
+        <view class='user'>
+            <view class='avator_box'>
+                <text> </text>
+                <image src="{{user}}" class='avator'></image>
+                <text> </text>
+            </view>
+            
+            <input placeholder="账户名" maxlength="18"
+                bindinput="userName"
+               value='{{username}}' name="username" type='text' placeholder-class="phcolor" 
+              class='input_c' auto-focus/>
+          </view>
+
+            <view class='pass'> 
+              <view class='avator_box'>
+               <text> </text>
+                <image src="{{pas}}" class='avator'></image>
+               <text> </text>
+              </view>
+              <input placeholder="密码" maxlength="18" value='{{password}}' 
+                  bindinput="userPass"
+                  name="password" placeholderClass="phcolor"  class='input_c' password/>
+           </view>
+
+           <view class='find_pass'>忘记密码?</view>
+
+           <view class='btn_box'>
+              <button class='register_btn' bindtap="register">注册</button>
+              <button class='login_btn' hover-class="other-button-hover" bindtap="login"><text>登陆</text></button>
+           </view>
+        </view>
+               <view class='wechat_login'>
+                <text> </text>
+                <view class='wechat_inner'>
+                   <text> </text>
+                   <view class='text_box'>
+                        <image src='./images/Shape.png' class='wechat_logo'></image>
+                        <text class='wechat_text'>使用微信账号登陆</text>
+                    </view>
+                    <text> </text>
+                </view>
+                <text> </text>
+           </view>
+    </view>
+</view>
