@@ -1,5 +1,6 @@
 /* pages/home/index.wxss */
-.cantiner{
+
+.cantiner {
   position: fixed;
   left: 0;
   top: 0;
@@ -8,54 +9,63 @@
   display: flex;
   flex-direction: column;
 }
-.banner{
+
+.banner {
   width: 100%;
   flex: 0 0 460rpx;
   position: relative;
 }
-.banner_text{
+
+.banner_text {
   position: absolute;
   top: 50%;
   left: 30%;
   color: #fff;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
-.title{
+
+.title {
   font-size: 48rpx;
 }
-.title_text{
+
+.title_text {
   font-size: 32rpx;
   color: #DDDEE1;
   font-family: PingFangSC-Regular;
 }
-.banner_img{
+
+.banner_img {
   width: 100%;
   height: 100%;
 }
-.item-box{
+
+.item-box {
   flex: 1 1 auto;
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 10rpx;
   background: #f7f7f7;
 }
-.item-cantianer{
+
+.item-cantianer {
   flex: 1;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #eee;
   background: #fff;
 }
-.item_middle{
+
+.item_middle {
   display: flex;
   justify-content: space-between;
 }
 
-.item_img{
+.item_img {
   width: 70rpx;
   height: 70rpx;
 }
-.item{
+
+.item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -65,19 +75,25 @@
   background: #fff;
   border-bottom: 1px solid #eee;
 }
-.item:nth-child(9) .item_img{
-    width: 70rpx;
-    height: 80rpx;
+
+.item:nth-child(9) .item_img {
+  width: 70rpx;
+  height: 80rpx;
 }
-.item:nth-child(2),.item:nth-child(5),.item:nth-child(8){
+
+.item:nth-child(2),
+.item:nth-child(5),
+.item:nth-child(8) {
   border-left: 1px solid #eee;
   border-right: 1px solid #eee;
 }
-.item_text{
+
+.item_text {
   font-size: 28rpx;
   line-height: 48rpx;
   color: #575C65;
 }
-.active-tag{
-  background:rgba(193,247,255,0.19);
+
+.active-tag {
+  background: rgba(193, 247, 255, 0.19);
 }

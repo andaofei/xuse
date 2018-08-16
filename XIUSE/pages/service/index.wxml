@@ -1,35 +1,93 @@
-<!--pages/service/index.wxml-->
+<!-- pages/service/index.wxml -->
 <view class='cantainer'>
+    <view class='info'>
+        <view class='avator'>
+            <view class='avator_inner'>
+                <image class='avator_img' src='{{avator}}'></image>
+            </view>
+            <view class='avator_name'>
+                <text></text>
+                <text>张三</text>
+                <text></text>
+            </view>
+        </view>
+        <view class='seting'>
+            <text></text>
+            <text>设置</text>
+            <text></text>
+        </view>
+    </view>
+    <view class='box'>
+        <view class='box_inner'>
+            <view class='wrapper'>
+                <view class='wrapper_inner'>
+                    <view class='top_header'>
+                        <text>看辅料</text>
+                        <text>我的收藏</text>
+                        <text>我的点赞</text>
+                    </view>
 
-  <view class='info'>
-      <view class='avator'>
-          <image class='avator_img' src='{{avator}}'></image>
-          <view class='avator_name'>
-              <text> </text>
-              <text>张三</text>
-              <text> </text>
-          </view>
-      </view> 
+                    <view class="order_wrapper" hover-class="none" hover-stop-propagation="false">
+                        <view class='order'>
+                            <view class='more_order'>加工单</view>
+                            <view class='more_order more_text'>查看更多订单></view>
+                        </view>
+                        <view class='order_list'>
+                            <view class='list_item' data-id="{{item.id}}" wx:for="{{orderList}}" wx:key="index">
+                                <view class="img_box" >
+                                    <text class="" > </text>
+                                    
+                                    <image data-id="{{item.id}}" wx:if="{{item.id === 10}}" src='{{item.src}}' class='list_img_more' ></image>
+                                    <image data-id="{{item.id}}" wx:else src='{{item.src}}' class='list_img'></image>
+                                    <text class="" > </text>
+                                </view>   
+                            
+                                <text class='list_text'>{{item.name}}</text>
+                            </view>
+                        </view>
+                   </view>
 
-      <view class='seting'>
-              <text> </text>
-              <text>设置</text>
-              <text> </text>
-      </view> 
-  </view>
+                   <view class="order_wrapper" hover-class="none" hover-stop-propagation="false">
+                        <view class='order'>
+                            <view class='more_order'>安装单</view>
+                            <view class='more_order more_text'>查看更多订单></view>
+                        </view>
+                        <view class='order_list'>
+                            <view class='list_item' data-id="{{item.id}}" wx:for="{{Installation}}" wx:key="index">
+                                <view class="img_box" >
+                                    <text class="" > </text>
+                                    
+                                    <image data-id="{{item.id}}" wx:if="{{item.id === 10}}" src='{{item.src}}' class='list_img_more' ></image>
+                                    <image data-id="{{item.id}}" wx:else src='{{item.src}}' class='list_img'></image>
+                                    <text class="" > </text>
+                                </view>   
+                            
+                                <text class='list_text'>{{item.name}}</text>
+                            </view>
+                        </view>
+                   </view>
 
-  <view class='box'>
-          <view class='box_inner'>
-              <view class='wrapper'>
-                    <view class='wrapper_inner'>
-                          <view class='top_header'>
-                            <text>看辅料</text>
-                            <text>我的收藏</text>
-                            <text>我的点赞</text>
-                          </view>
-                    </view> 
-              </view>
-          </view>
-  
-  </view>
-</view> 
+                   <view class="order_wrapper" hover-class="none" hover-stop-propagation="false">
+                        <view class='order'>
+                            <view class='more_order'>管理</view>
+                            <view class='more_order more_text'>查看更多订单></view>
+                        </view>
+                        <view class='order_list'>
+                            <view class='list_item' data-id="{{item.id}}" wx:for="{{management}}" wx:key="index">
+                                <view class="img_box" >
+                                    <text class="" > </text>
+                                    
+                                    <image data-id="{{item.id}}" wx:if="{{item.id === 10}}" src='{{item.src}}' class='list_img_more' ></image>
+                                    <image data-id="{{item.id}}" wx:else src='{{item.src}}' class='list_img'></image>
+                                    <text class="" > </text>
+                                </view>   
+                            
+                                <text class='list_text'>{{item.name}}</text>
+                            </view>
+                        </view>
+                   </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
