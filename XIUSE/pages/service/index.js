@@ -1,11 +1,11 @@
-// pages/register.js
+// pages/service/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+      avator: './images/user.png'
   },
 
   /**

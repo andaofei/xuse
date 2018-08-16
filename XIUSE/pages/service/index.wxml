@@ -1,0 +1,35 @@
+<!--pages/service/index.wxml-->
+<view class='cantainer'>
+
+  <view class='info'>
+      <view class='avator'>
+          <image class='avator_img' src='{{avator}}'></image>
+          <view class='avator_name'>
+              <text> </text>
+              <text>张三</text>
+              <text> </text>
+          </view>
+      </view> 
+
+      <view class='seting'>
+              <text> </text>
+              <text>设置</text>
+              <text> </text>
+      </view> 
+  </view>
+
+  <view class='box'>
+          <view class='box_inner'>
+              <view class='wrapper'>
+                    <view class='wrapper_inner'>
+                          <view class='top_header'>
+                            <text>看辅料</text>
+                            <text>我的收藏</text>
+                            <text>我的点赞</text>
+                          </view>
+                    </view> 
+              </view>
+          </view>
+  
+  </view>
+</view> 

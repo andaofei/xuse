@@ -50,19 +50,24 @@
   display: flex;
   justify-content: space-between;
 }
+
 .item_img{
-  width: 80rpx;
-  height: 80rpx;
+  width: 70rpx;
+  height: 70rpx;
 }
 .item{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 33%;
   text-align: center;
   padding: 20rpx 0;
   background: #fff;
   border-bottom: 1px solid #eee;
+}
+.item:nth-child(9) .item_img{
+    width: 70rpx;
+    height: 80rpx;
 }
 .item:nth-child(2),.item:nth-child(5),.item:nth-child(8){
   border-left: 1px solid #eee;

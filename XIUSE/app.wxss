@@ -2,6 +2,7 @@
 page{
      /* font-family: MicroSoft Yahei; */
      font-size: 32rpx;
+     font-family: PingFangSC-Medium;
 }
 .container {
   position: fixed;
@@ -10,4 +11,4 @@ page{
   background: #f7f7f7;
   padding: 10rpx 0;
   box-sizing: border-box;
-} 
+}

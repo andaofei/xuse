@@ -4,7 +4,8 @@
     "pages/home/index",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/register/index"
+    "pages/register/index",
+    "pages/service/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
