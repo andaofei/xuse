@@ -1,0 +1,64 @@
+/* pages/usercenter/index.wxss */
+.cantiner{
+    position: fixed;
+    width:100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background: #f7f7f7;
+}
+.header_user{
+    display:flex;
+    justify-content: space-between;
+    padding: 30rpx;
+    background: #fff;
+    margin-bottom: 20rpx;
+}
+.avator_box{
+    display: flex;
+}
+.name{
+    font-size: 32rpx;
+    font-weight: 600;
+    margin-left: 20rpx;
+}
+.name_user,.code,.code_right,.item_icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.code{
+    margin-right:20rpx;
+}
+.code_box{
+    display: flex;
+}
+.code_img{
+    width: 40rpx;
+    height: 40rpx;
+}
+.icon_arrow{
+    font-size: 28rpx;
+    color: #B2B5BA;
+}
+.item{
+    padding: 20rpx;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid #eee;
+}
+.item_left{
+    font-size: 28rpx;
+    font-size: 600;
+    line-height: 48rpx;
+}
+.item_right{
+    display: flex;
+}
+.item_name{
+    color: #B2B5BA;
+    font-size: 28rpx;
+    line-height: 48rpx;
+    margin-right: 20rpx;
+}

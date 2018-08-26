@@ -67,9 +67,10 @@
     font-size: 24rpx;
     line-height: 48rpx;
     border-radius: 8rpx;
+    border: 1px solid rgba(255,255,255,0);
 }
 .nav-hover{
-    background:rgba(170,41,47,0.7);
+    background:rgba(170,41,47,0.4);
     color: #AA292F;
     border: 1px solid #AA292F;
     margin: 0 20rpx;

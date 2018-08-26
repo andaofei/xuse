@@ -133,8 +133,18 @@
     display: flex;
 }
 .express{
+
+    display: flex;
+}
+.express_title{
+    width:120rpx;
+    text-align: justify;
+    text-align-last: justify;
+}
+.express_title,.express_inner{
     font-size: 24rpx;
     color:#B2B5BA;
+    line-height:48rpx;
 }
 .item_btn {
     border-radius: 30rpx;

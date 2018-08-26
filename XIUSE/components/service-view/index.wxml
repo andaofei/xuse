@@ -5,42 +5,63 @@
                                     <view slot="action" bind:tap="onSearch">搜索</view>
                                 </van-search> -->
     </view>
-    <view class="item_box">
+    <view class="item_box" wx:for="{{pageData}}" wx:key="index">
         <view class="item">
             <view class="title">
-                <view class="title_text">儿童房</view>
-                <view class="title_text">Xs12415454564654</view>
+                <view class="title_text">{{item.name}}</view>
+                <view class="title_text">{{item.number}}</view>
             </view>
-            <view class="item_img van-hairline--bottom">
+
+            <view class="item_img van-hairline--bottom" 
+                    wx:for="{{item.inner}}" 
+                    wx:key="index" 
+                    wx:for-index="idx"
+                    wx:for-item="itemInner">
+
                 <view class="item_img_left">
-                    <view class="img_box">
-                        <image class="images" src="./images/test.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+                    <view class="img_box"
+                    wx:for="{{itemInner.images}}" 
+                    wx:for-index="idx" 
+                    wx:key="index" 
+                    wx:for-item="itemImg">
+                        <image class="images" src="{{itemImg.url}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
                     </view>
-                    <view class="img_box">
+
+                    <!-- <view class="img_box">
                         <image class="images" src="./images/test.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
-                    </view>
+                    </view> -->
+
                     <view class="item_img_right">
-                        <view class="right_title">儿童房</view>
-                        <view class="right_box">
-                            <view class="right_item">
-                                <view class="right_item_txt" catchtap="viewSelect">aj-33:</view>
-                                <view class="arrow">
-                                    <image class="arrow" src="./images/arrow-down.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+                        <view class="right_title">{{itemInner.title}}</view>
+
+                        <view class="right_box" >
+                            <view class="right_item" wx:for="{{itemInner.tag}}" wx:key="index"
+                             wx:for-index="idx" 
+                            wx:for-item="itemTag">
+
+                                <view class="right_item_txt" catchtap="viewSelect">{{itemTag.name}}</view>
+                                    <view class="arrow">
+                                        <image class="arrow" src="./images/arrow-down.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+                                    </view>
                                 </view>
-                            </view>
-                            <view class="right_item">
+
+                            <!-- <view class="right_item">
                                 <view class="right_item_txt">aj-33:</view>
                                 <view class="arrow">
-                                    <image class="arrow" src="./images/arrow-down.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+                                    <image class="arrow" src="./images/arrow-down.png" 
+                                    mode="aspectFit|aspectFill|widthFix" 
+                                    lazy-load="false" binderror=""
+                                     bindload=""></image>
                                 </view>
-                            </view>
+                            </view> -->
                         </view>
+
                         <!-- <view class="right_ft" selectable="false" space="false" decode="false">
                                                     - -
                                                 </view> -->
                         <view class="right_ft" selectable="false" space="false" decode="false">
                             <view class="cash" hover-class="none" hover-stop-propagation="false">
-                                ¥128
+                                ¥{{itemInner.price}}
                             </view>
                         </view>
                     </view>
@@ -50,7 +71,7 @@
                     <view class="action_btn" hover-class="none" hover-stop-propagation="false">
                         <view class="action_img">-</view>
                         <view class="text_count" selectable="false" space="false" decode="false">
-                            1
+                            {{itemInner.counts}}
                         </view>
                         <view class="action_img_right" selectable="false" space="false" decode="false">
                             +
@@ -58,7 +79,8 @@
                     </view>
                 </view>
             </view>
-            <view class="item_img van-hairline--bottom">
+
+            <!-- <view class="item_img van-hairline--bottom">
                 <view class="item_img_left">
                     <view class="img_box">
                         <image class="images" src="./images/test.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
@@ -99,24 +121,54 @@
                         </view>
                     </view>
                 </view>
-            </view>
+            </view> -->
+
             <view class="item_action" hover-class="none" hover-stop-propagation="false">
                 <view class="time" hover-class="none" hover-stop-propagation="false">
-                    下单时间 2018-02-15 12：02：04
+                     {{item.time}}
                 </view>
                 <view class="item_btn_box" hover-class="none" hover-stop-propagation="false">
                     <button class="item_btn btn-left" data-id="{{id}}" catchtap="onViewtTap" hover-class="button-hover">
-                        {{name}}
+                        {{item.status.name}}
                     </button>
-                    <button class="item_btn btn-right" hover-class="button-hover">待收材料</button>
+                    <button class="item_btn btn-right" hover-class="button-hover">{{item.nextstatus.name}}</button>
                 </view>
             </view>
         </view>
-        <view class="item" hover-class="none" hover-stop-propagation="false">
+        <view class="item_express" hover-class="none" hover-stop-propagation="false">
             <i-panel title="">
                 <view style="padding: 10px;">
                     <view class="express" hover-class="none" hover-stop-propagation="false">
-                        PANEL 内容区域
+                       <view class="express_title">
+                           下单时间：
+                       </view> 
+                      <view class="express_inner" hover-class="none" hover-stop-propagation="false">
+                           {{item.express.order_number}}
+                      </view>
+                    </view>
+                     <view class="express" hover-class="none" hover-stop-propagation="false">
+                       <view class="express_title">
+                           创建时间：
+                       </view> 
+                      <view class="express_inner" hover-class="none" hover-stop-propagation="false">
+                           {{item.express.creat_time}}
+                      </view>
+                    </view>
+                     <view class="express" hover-class="none" hover-stop-propagation="false">
+                       <view class="express_title">
+                           成交时间：
+                       </view> 
+                       <view class="express_inner" hover-class="none" hover-stop-propagation="false">
+                           {{item.express.order_time}}
+                       </view>
+                    </view>
+                     <view class="express" hover-class="none" hover-stop-propagation="false">
+                       <view class="express_title">
+                           运单号：
+                       </view> 
+                      <view class="express_inner" hover-class="none" hover-stop-propagation="false">
+                           {{item.express.Waybill_number}}
+                      </view>
                     </view>
                 </view>
             </i-panel>

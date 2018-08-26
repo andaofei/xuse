@@ -12,11 +12,12 @@
     <!-- 主体页面 -->
     <view class="scroll_wrapper">
         <view class="scroll_inner">
-            <swiper class="" duration="0" style="height:100%;" bindchange="" current='{{selectedTitle}}' bindanimationfinish="">
+            <swiper class="" duration="0" style="height:100%;" bindchange="" current='{{selectedIndex}}' 
+            bindanimationfinish="">
                 <block wx:for="{{section}}" wx:key="id">
                     <swiper-item class="">
                         <scroll-view class="scroll_continer" scroll-y="true" style="height: 100%">
-                            <template is="service" data="{{...item}}"></template>
+                            <template is="service" data="{{pageData}}"></template>
                         </scroll-view>
                     </swiper-item>
                 </block>

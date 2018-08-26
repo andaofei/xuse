@@ -96,6 +96,11 @@ Page({
       url: '../serviceChild/index?orderId=' + e.currentTarget.id
     })
   },
+  settingUser() {
+    wx.navigateTo({
+      url: '../usercenter/index'
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

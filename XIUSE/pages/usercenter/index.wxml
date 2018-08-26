@@ -1,0 +1,137 @@
+<!-- pages/usercenter/index.wxml -->
+<view class="cantiner">
+    <view class="header_user" hover-class="none" hover-stop-propagation="false">
+        <view class="avator_box" hover-class="none" hover-stop-propagation="false">
+            <view class='avator'>
+                <view class='avator_inner'>
+                    <text class="" selectable="false" space="false" decode="false"></text>
+                    <i-avatar src='{{avator}}' size="default"></i-avatar>
+                    <text class="" selectable="false" space="false" decode="false"></text>
+                </view>
+            </view>
+            <view class="name_user" hover-class="none" hover-stop-propagation="false">
+                <view class="name">张三</view>
+            </view>
+        </view>
+        <view class="code_box" hover-class="none" hover-stop-propagation="false">
+            <view class="code">
+                <image class="code_img" src="{{code}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+            </view>
+            <view class="code_right" hover-class="none" hover-stop-propagation="false">
+                <van-icon name="arrow" class="icon_arrow" />
+            </view>
+        </view>
+    </view>
+    <!-- 单元格 -->
+    <view class="item_box" hover-class="none" hover-stop-propagation="false">
+            <view class="item" hover-class="none" hover-stop-propagation="false">
+                 <view class="item_left" hover-class="none" hover-stop-propagation="false">
+                     昵称
+                 </view>
+
+                 <view class="item_right" hover-class="none" hover-stop-propagation="false">
+                     <view class="item_name" hover-class="none" hover-stop-propagation="false">
+                         张三
+                     </view>
+                       <view class="item_icon" hover-class="none" hover-stop-propagation="false">
+                            <van-icon name="arrow" class="icon_arrow" />
+                       </view>
+                </view>
+            </view>
+
+            <view class="item" hover-class="none" hover-stop-propagation="false">
+                 <view class="item_left" hover-class="none" hover-stop-propagation="false">
+                     昵称
+                 </view>
+
+                 <view class="item_right" hover-class="none" hover-stop-propagation="false">
+                     <view class="item_name" hover-class="none" hover-stop-propagation="false">
+                         张三
+                     </view>
+                       <view class="item_icon" hover-class="none" hover-stop-propagation="false">
+                            <van-icon name="arrow" class="icon_arrow" />
+                       </view>
+                </view>
+            </view>
+
+
+            <view class="item" hover-class="none" hover-stop-propagation="false">
+                 <view class="item_left" hover-class="none" hover-stop-propagation="false">
+                     用户名
+                 </view>
+
+                 <view class="item_right" hover-class="none" hover-stop-propagation="false">
+                     <view class="item_name" hover-class="none" hover-stop-propagation="false">
+                         张三
+                     </view>
+                       <view class="item_icon" hover-class="none" hover-stop-propagation="false">
+                            <van-icon name="arrow" class="icon_arrow" />
+                       </view>
+                </view>
+            </view>
+
+
+            <view class="item" hover-class="none" hover-stop-propagation="false">
+                 <view class="item_left" hover-class="none" hover-stop-propagation="false">
+                     手机号
+                 </view>
+
+                 <view class="item_right" hover-class="none" hover-stop-propagation="false">
+                     <view class="item_name" hover-class="none" hover-stop-propagation="false">
+                         张三
+                     </view>
+                       <view class="item_icon" hover-class="none" hover-stop-propagation="false">
+                            <van-icon name="arrow" class="icon_arrow" />
+                       </view>
+                </view>
+            </view>
+
+
+            <view class="item" hover-class="none" hover-stop-propagation="false">
+                 <view class="item_left" hover-class="none" hover-stop-propagation="false">
+                     真实姓名
+                 </view>
+
+                 <view class="item_right" hover-class="none" hover-stop-propagation="false">
+                     <view class="item_name" hover-class="none" hover-stop-propagation="false">
+                         张三
+                     </view>
+                       <view class="item_icon" hover-class="none" hover-stop-propagation="false">
+                            <van-icon name="arrow" class="icon_arrow" />
+                       </view>
+                </view>
+            </view>
+
+
+            <view class="item" hover-class="none" hover-stop-propagation="false">
+                 <view class="item_left" hover-class="none" hover-stop-propagation="false">
+                     身份证号
+                 </view>
+
+                 <view class="item_right" hover-class="none" hover-stop-propagation="false">
+                     <view class="item_name" hover-class="none" hover-stop-propagation="false">
+                         张三
+                     </view>
+                       <view class="item_icon" hover-class="none" hover-stop-propagation="false">
+                            <van-icon name="arrow" class="icon_arrow" />
+                       </view>
+                </view>
+            </view>
+
+            
+            <view class="item" hover-class="none" hover-stop-propagation="false">
+                 <view class="item_left" hover-class="none" hover-stop-propagation="false">
+                     邮箱
+                 </view>
+
+                 <view class="item_right" hover-class="none" hover-stop-propagation="false">
+                     <view class="item_name" hover-class="none" hover-stop-propagation="false">
+                         张三
+                     </view>
+                       <view class="item_icon" hover-class="none" hover-stop-propagation="false">
+                            <van-icon name="arrow" class="icon_arrow" />
+                       </view>
+                </view>
+            </view>
+    </view>
+</view>

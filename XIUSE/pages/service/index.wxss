@@ -25,6 +25,9 @@
 .avator_inner {
     width: 40px;
     height: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .avator_img {

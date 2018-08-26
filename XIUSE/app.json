@@ -8,7 +8,8 @@
     "pages/service/index",
     "pages/serviceChild/index",
     "components/service-view/index",
-    "pages/serviceChild/goodDetail/index"
+    "pages/serviceChild/goodDetail/index",
+    "pages/usercenter/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

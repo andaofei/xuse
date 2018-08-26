@@ -3,7 +3,13 @@
     <view class='info'>
         <view class='avator'>
             <view class='avator_inner'>
+            <text class="" selectable="false" space="false" decode="false">
+                
+            </text>
                 <i-avatar src='{{avator}}' size="default"></i-avatar>
+                 <text class="" selectable="false" space="false" decode="false">
+                
+            </text>
             </view>
             <!-- <i-avatar size="large">梁</i-avatar> -->
            
@@ -14,7 +20,7 @@
             </view>
             
         </view>
-        <view class='seting'>
+        <view class='seting' bindtap="settingUser" >
             <text></text>
             <text>设置</text>
             <text></text>
