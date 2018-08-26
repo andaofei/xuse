@@ -50,7 +50,7 @@
                 <view class='wechat_inner'>
                    <text> </text>
                    <view class='text_box'>
-                        <image src='./images/Shape.png' class='wechat_logo'></image>
+                        <image src='./images/Shape@2x.png' class='wechat_logo'></image>
                         <text class='wechat_text'>使用微信账号登陆</text>
                     </view>
                     <text> </text>

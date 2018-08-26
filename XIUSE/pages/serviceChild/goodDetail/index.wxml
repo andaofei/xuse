@@ -1,0 +1,29 @@
+<!-- pages/serviceChild/goodDetail/index.wxml -->
+<view class="cantiner" hover-class="none" hover-stop-propagation="false">
+    <view class="good_img" hover-class="none" hover-stop-propagation="false">
+        <image class="img_detail" src="../images/test.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+    </view>
+    <view class="good_box" hover-class="none" hover-stop-propagation="false">
+        <view class="main" hover-class="none" hover-stop-propagation="false">
+            <view class="title" hover-class="none" hover-stop-propagation="false">主材料</view>
+            <view class="name" hover-class="none" hover-stop-propagation="false">主料</view>
+            <view class="items" hover-class="none" hover-stop-propagation="false">
+                <view wx:for="{{goods}}" class="item" wx:key="id" catchtap="handleSelect" id="{{item.id}}" hover-class="none" hover-stop-propagation="false">
+                    <view  class="nav-name {{item.id == currentId ? 'nav-hover' : 'inner'}}" hover-class="none" hover-stop-propagation="false">
+                        {{item.name}}
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="second" hover-class="none" hover-stop-propagation="false">
+            <view class="name" hover-class="none" hover-stop-propagation="false">辅料</view>
+            <view class="items" hover-class="none" hover-stop-propagation="false">
+                <view class="item" hover-class="none" hover-stop-propagation="false">
+                    <view class="inner" hover-class="none" hover-stop-propagation="false">
+                        aj-32
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

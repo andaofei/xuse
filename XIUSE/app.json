@@ -5,7 +5,10 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/register/index",
-    "pages/service/index"
+    "pages/service/index",
+    "pages/serviceChild/index",
+    "components/service-view/index",
+    "pages/serviceChild/goodDetail/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -23,26 +26,26 @@
     "list": [
       {
         "pagePath": "pages/home/index",
-        "iconPath": "icon/TAB首页@2x.png",
-        "selectedIconPath": "icon/TAB首页@2x.png",
+        "iconPath": "icon/home.png",
+        "selectedIconPath": "icon/home.png",
         "text": "首页"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "iconPath": "icon/TAB我要加工@2x.png",
-        "selectedIconPath": "icon/TAB我要加工@2x.png",
+        "pagePath": "pages/home/index",
+        "iconPath": "icon/processing.png",
+        "selectedIconPath": "icon/processing.png",
         "text": "我要加工"
       },
       {
         "pagePath": "pages/logs/logs",
-        "iconPath": "icon/TAB我要安装@2x.png",
-        "selectedIconPath": "icon/TAB我要安装@2x.png",
+        "iconPath": "icon/installation.png",
+        "selectedIconPath": "icon/installation.png",
         "text": "我要安装"
       },
       {
         "pagePath": "pages/logs/logs",
-        "iconPath": "icon/ATB个人中心@2x.png",
-        "selectedIconPath": "icon/ATB个人中心@2x.png",
+        "iconPath": "icon/center.png",
+        "selectedIconPath": "icon/center.png",
         "text": "个人中心"
       }
     ]

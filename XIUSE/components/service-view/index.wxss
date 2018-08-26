@@ -1,0 +1,158 @@
+/* components/service-scroll/index.wxss */
+.title {
+    display: flex;
+    justify-content: space-between;
+    padding:20rpx;
+    background: #fff;
+}
+
+.title_text {
+    color: #B2B5BA;
+    font-size: 24rpx;
+    line-height: 24rpx;
+}
+
+.item {
+    background: #F4F4F4;
+    margin-bottom: 20rpx; 
+}
+
+.item_img {
+    display: flex;
+    padding: 20rpx;
+}
+
+.item_img_left {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.images {
+    width: 150rpx;
+    height: 150rpx;
+}
+.img_box{
+    margin-right: 20rpx;
+}
+.item_img_right {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+.right_title {
+    font-size: 28rpx;
+    line-height: 32rpx;
+}
+
+.right_box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.right_item,
+.right_ft {
+    font-size-adjust: 16rpx;
+    color: #B2B5BA;
+    line-height: 32rpx;
+}
+
+.right_item {
+    display: flex;
+    background: #eee;
+    margin-right: 10rpx;
+    padding: 6rpx;
+}
+
+.right_item_txt {
+    font-size: 24rpx;
+    line-height: 32rpx;
+}
+
+.arrow {
+    width: 12px;
+    height: 12px;
+    margin-left: 3px;
+}
+.cash{
+    color:#AA292F;
+    font-size: 24rpx;
+}
+.img_action {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 0 110rpx;
+}
+
+.action_btn {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #eee;
+    border-radius: 3px;
+}
+
+.action_img,
+.action_img_right {
+    width: 35rpx;
+    height: 35rpx;
+    line-height: 40rpx;
+    text-align: center;
+    color: #eee;
+}
+
+.action_img {
+    border-right: 1px solid #eee;
+}
+
+.action_img_right {
+    border-left: 1px solid #eee;
+}
+
+.text_count {
+    font-size: 20rpx;
+    line-height: 40rpx;
+    color: #AA292F;
+}
+
+.item_action {
+    padding: 20rpx;
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+}
+
+.time {
+    color:#B2B5BA;
+    font-size: 24rpx;
+    line-height: 46rpx;
+}
+
+.item_btn_box {
+    display: flex;
+}
+.express{
+    font-size: 24rpx;
+    color:#B2B5BA;
+}
+.item_btn {
+    border-radius: 30rpx;
+    font-size: 28rpx;
+    padding: 2rpx 15rpx;
+    line-height: 46rpx;
+    display: inline-block;
+    margin-left: 10rpx;
+    background-color:#fff;
+}
+.button-hover{
+    background: #f8f8f8;
+}
+.btn-left{
+    border: 1px solid #AA2930;
+    color: #AA2930;
+}
+.btn-right{
+    border: 1px solid #EBEBEB;
+    color: #B2B5BA;
+}

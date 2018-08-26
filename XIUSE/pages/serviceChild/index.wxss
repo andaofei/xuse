@@ -1,0 +1,111 @@
+/* pages/serviceChild/index.wxss */
+
+@import '../../components/service-view/index';
+.contanier {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    overflow: hidden;
+    background: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+}
+
+.scroll_box {
+    background: #fff;
+    flex: 0 0 80rpx;
+}
+
+.scroll_view {
+    white-space: nowrap;
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.nav-name {
+    display: inline-block;
+    font-size: 28rpx;
+    color: #484E5B;
+    padding: 20rpx 20rpx;
+}
+
+.nav-hover {
+    border-bottom: 2px solid #42929D;
+    color: #42929D;
+}
+
+.scroll_wrapper {
+    flex: 1 1 auto;
+    overflow-y: hidden;
+    background: #f7f7f7;
+}
+
+.scroll_inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.scroll_continer {
+    height: 100%;
+    width: 100%;
+    background: #f7f7f7;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+
+.serch_box {
+    background: #f7f7f7;
+}
+
+.item_box {
+    margin-bottom: 20rpx;
+}
+
+.dialog_wrapper {
+    width: 80%;
+    padding: 20rpx;
+    border-radius: 8rpx;
+    background: #fff;
+}
+
+.dialog_box {
+    width: 100%;
+}
+
+.sale {
+    text-align: left;
+    font-size: 24rpx;
+    color: #484E5B;
+    line-height: 42rpx;
+}
+
+.dialog_action {
+    text-align: right;
+    padding: 10rpx 0;
+}
+
+.dialog_btn {
+    display: inline-block;
+    font-size: 28rpx;
+    padding: 0 20rpx;
+    line-height: 64rpx;
+    border-radius: 10rpx;
+}
+
+.dialog-left {
+    margin-right: 16rpx;
+    background: #42929D;
+    color: #fff;
+}
+
+.dialog-right {
+    border: 1px solid #F2F2F2;
+    color: #B2B5BA;
+}

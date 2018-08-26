@@ -1,0 +1,44 @@
+<!-- pages/serviceChild/index.wxml -->
+<import src="../../components/service-view/index" />
+<view class="contanier">
+    <!-- 头部导航 -->
+    <view class="scroll_box">
+        <scroll-view class="scroll_view" scroll-x="true" style="width: 100%">
+            <view wx:for="{{section}}" wx:key="id" id="{{item.id}}" catchtap="handleTap" class="nav-name {{item.id == currentId ? 'nav-hover' : ''}}">
+                {{item.name}}
+            </view>
+        </scroll-view>
+    </view>
+    <!-- 主体页面 -->
+    <view class="scroll_wrapper">
+        <view class="scroll_inner">
+            <swiper class="" duration="0" style="height:100%;" bindchange="" current='{{selectedTitle}}' bindanimationfinish="">
+                <block wx:for="{{section}}" wx:key="id">
+                    <swiper-item class="">
+                        <scroll-view class="scroll_continer" scroll-y="true" style="height: 100%">
+                            <template is="service" data="{{...item}}"></template>
+                        </scroll-view>
+                    </swiper-item>
+                </block>
+            </swiper>
+        </view>
+    </view>
+    <!-- 待报价弹出层 -->
+    <van-popup show="{{ show }}" bind:close="onClose" custom-class="dialog_wrapper" overlay-class="overlay_box">
+        <view class="dialog_box">
+            <view class="sale" hover-class="none" hover-stop-propagation="false">请报价</view>
+            <view class="dialog_input" hover-class="none" hover-stop-propagation="false">
+                <van-field value="{{ value }}" placeholder="请输入价格" bind:change="onChange" />
+            </view>
+            <view class="dialog_action" hover-class="none" hover-stop-propagation="false">
+                <button class="dialog_btn dialog-left" catchtap="onSubmit" hover-class="button-hover">
+                    确认
+                </button>
+                <button class="dialog_btn dialog-right" catchtap="onClose" hover-class="button-hover">
+                    取消
+                </button>
+            </view>
+        </view>
+    </van-popup>
+
+</view>

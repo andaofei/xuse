@@ -1,4 +1,5 @@
 /**app.wxss**/
+@import "/vant-weapp/dist/common/index.wxss";
 page{
     /* font-family: MicroSoft Yahei; */
     font-size: 32rpx;

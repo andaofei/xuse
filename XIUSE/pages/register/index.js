@@ -8,8 +8,8 @@ Page({
     username: '',
     code: '',
     aiUrl: './images/Group3@2x.png',
-    user: './images/user@3x.png',
-    pas: './images/lock-ico@3x.png'
+    user: './images/user@2x.png',
+    pas: './images/lock-ico@2x.png'
   },
   //用户名
   userName: function (e) {

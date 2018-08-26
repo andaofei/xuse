@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -13,7 +13,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.1.1",
 	"appid": "wx872a80ac5261aad4",
-	"projectname": "XIUSE2",
+	"projectname": "XIUSE3",
 	"isGameTourist": false,
 	"condition": {
 		"search": {

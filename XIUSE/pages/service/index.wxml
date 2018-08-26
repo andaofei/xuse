@@ -3,13 +3,16 @@
     <view class='info'>
         <view class='avator'>
             <view class='avator_inner'>
-                <image class='avator_img' src='{{avator}}'></image>
+                <i-avatar src='{{avator}}' size="default"></i-avatar>
             </view>
+            <!-- <i-avatar size="large">梁</i-avatar> -->
+           
             <view class='avator_name'>
                 <text></text>
                 <text>张三</text>
                 <text></text>
             </view>
+            
         </view>
         <view class='seting'>
             <text></text>
@@ -32,17 +35,35 @@
                             <view class='more_order'>加工单</view>
                             <view class='more_order more_text'>查看更多订单></view>
                         </view>
+
                         <view class='order_list'>
-                            <view class='list_item' data-id="{{item.id}}" wx:for="{{orderList}}" wx:key="index">
-                                <view class="img_box" >
-                                    <text class="" > </text>
-                                    
-                                    <image data-id="{{item.id}}" wx:if="{{item.id === 10}}" src='{{item.src}}' class='list_img_more' ></image>
-                                    <image data-id="{{item.id}}" wx:else src='{{item.src}}' class='list_img'></image>
-                                    <text class="" > </text>
+                            <view class='list_item' 
+                            bindtap="slectPage" 
+                            id="{{item.id}}"
+                            wx:for="{{orderList}}" 
+                            wx:key="index">
+                                <view class="img_box_wrapper">
+                                    <view class="img_box" hover-class="none" over-stop-propagation="false">
+                                     <view class="counts" hover-class="none" hover-stop-propagation="false"> 12 </view>
+                                    <text> </text>
+                                    <image src='{{item.src}}' class='list_img'></image>
+                                    <text> </text>
+                                    </view>
                                 </view>   
                             
                                 <text class='list_text'>{{item.name}}</text>
+                            </view>
+
+                           <view class="list_item">
+                                 <view class="img_box_more" >
+                                    <text class="" > </text>
+                                    <view class="list_img_more_box" >
+                                         <image class='list_img_more' src='{{more}}' ></image>
+                                    </view>
+                                    <text class="" > </text>
+                                </view>   
+                            
+                                <text class='list_text'>更多选项</text>
                             </view>
                         </view>
                    </view>
@@ -57,14 +78,16 @@
                                 <view class="img_box" >
                                     <text class="" > </text>
                                     
-                                    <image data-id="{{item.id}}" wx:if="{{item.id === 10}}" src='{{item.src}}' class='list_img_more' ></image>
-                                    <image data-id="{{item.id}}" wx:else src='{{item.src}}' class='list_img'></image>
+                                  <image src='{{item.src}}' class='list_img'></image>
                                     <text class="" > </text>
                                 </view>   
                             
                                 <text class='list_text'>{{item.name}}</text>
-                            </view>
+
+                                </view>
+              
                         </view>
+
                    </view>
 
                    <view class="order_wrapper" hover-class="none" hover-stop-propagation="false">
@@ -77,9 +100,9 @@
                                 <view class="img_box" >
                                     <text class="" > </text>
                                     
-                                    <image data-id="{{item.id}}" wx:if="{{item.id === 10}}" src='{{item.src}}' class='list_img_more' ></image>
-                                    <image data-id="{{item.id}}" wx:else src='{{item.src}}' class='list_img'></image>
-                                    <text class="" > </text>
+                                    <image data-id="{{item.id}}" src='{{item.src}}' class='list_img'></image>
+                                   
+                                   <text class="" > </text>
                                 </view>   
                             
                                 <text class='list_text'>{{item.name}}</text>

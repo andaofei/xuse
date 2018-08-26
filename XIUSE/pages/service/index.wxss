@@ -123,6 +123,31 @@
     display: flex;
     justify-content: space-between;
 }
+.img_box_wrapper{
+    position: relative;
+}
+.counts{
+    position: absolute;
+    top: -8rpx;
+    right: 30rpx;
+    background:#218A95;
+    width: 30rpx;
+    height: 30rpx;
+    border-radius: 50%;
+    color: #fff;
+    font-size:16rpx;
+    line-height:30rpx;
+    text-align: center;
+}
+.list_img_more_box{
+    text-align: center;
+}
+.img_box_more{
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
 .list_img {
     width: 50rpx;
     height: 50rpx;

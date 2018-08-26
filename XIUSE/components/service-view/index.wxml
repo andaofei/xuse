@@ -1,0 +1,125 @@
+<!-- components/service-scroll/index.wxml -->
+<template name="service">
+    <view class='serch_box'>
+        <!-- <van-search show-action value="{{ value }}" placeholder="请输入搜索关键词" use-action-slot bind:search="onSearch">
+                                    <view slot="action" bind:tap="onSearch">搜索</view>
+                                </van-search> -->
+    </view>
+    <view class="item_box">
+        <view class="item">
+            <view class="title">
+                <view class="title_text">儿童房</view>
+                <view class="title_text">Xs12415454564654</view>
+            </view>
+            <view class="item_img van-hairline--bottom">
+                <view class="item_img_left">
+                    <view class="img_box">
+                        <image class="images" src="./images/test.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+                    </view>
+                    <view class="img_box">
+                        <image class="images" src="./images/test.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+                    </view>
+                    <view class="item_img_right">
+                        <view class="right_title">儿童房</view>
+                        <view class="right_box">
+                            <view class="right_item">
+                                <view class="right_item_txt" catchtap="viewSelect">aj-33:</view>
+                                <view class="arrow">
+                                    <image class="arrow" src="./images/arrow-down.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+                                </view>
+                            </view>
+                            <view class="right_item">
+                                <view class="right_item_txt">aj-33:</view>
+                                <view class="arrow">
+                                    <image class="arrow" src="./images/arrow-down.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+                                </view>
+                            </view>
+                        </view>
+                        <!-- <view class="right_ft" selectable="false" space="false" decode="false">
+                                                    - -
+                                                </view> -->
+                        <view class="right_ft" selectable="false" space="false" decode="false">
+                            <view class="cash" hover-class="none" hover-stop-propagation="false">
+                                ¥128
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="img_action" hover-class="none" hover-stop-propagation="false">
+                    <text class="" selectable="false" space="false" decode="false"></text>
+                    <view class="action_btn" hover-class="none" hover-stop-propagation="false">
+                        <view class="action_img">-</view>
+                        <view class="text_count" selectable="false" space="false" decode="false">
+                            1
+                        </view>
+                        <view class="action_img_right" selectable="false" space="false" decode="false">
+                            +
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="item_img van-hairline--bottom">
+                <view class="item_img_left">
+                    <view class="img_box">
+                        <image class="images" src="./images/test.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+                    </view>
+                    <view class="img_box">
+                        <image class="images" src="./images/test.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+                    </view>
+                    <view class="item_img_right">
+                        <view class="right_title">大床房</view>
+                        <view class="right_box">
+                            <view class="right_item">
+                                <view class="right_item_txt">aj-33:</view>
+                                <view class="arrow">
+                                    <image class="arrow" src="./images/arrow-down.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+                                </view>
+                            </view>
+                            <view class="right_item">
+                                <view class="right_item_txt">aj-33:</view>
+                                <view class="arrow">
+                                    <image class="arrow" src="./images/arrow-down.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+                                </view>
+                            </view>
+                        </view>
+                        <view class="right_ft" selectable="false" space="false" decode="false">
+                            - -
+                        </view>
+                    </view>
+                </view>
+                <view class="img_action" hover-class="none" hover-stop-propagation="false">
+                    <text class="" selectable="false" space="false" decode="false"></text>
+                    <view class="action_btn" hover-class="none" hover-stop-propagation="false">
+                        <view class="action_img">-</view>
+                        <view class="text_count" selectable="false" space="false" decode="false">
+                            1
+                        </view>
+                        <view class="action_img_right" selectable="false" space="false" decode="false">
+                            +
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="item_action" hover-class="none" hover-stop-propagation="false">
+                <view class="time" hover-class="none" hover-stop-propagation="false">
+                    下单时间 2018-02-15 12：02：04
+                </view>
+                <view class="item_btn_box" hover-class="none" hover-stop-propagation="false">
+                    <button class="item_btn btn-left" data-id="{{id}}" catchtap="onViewtTap" hover-class="button-hover">
+                        {{name}}
+                    </button>
+                    <button class="item_btn btn-right" hover-class="button-hover">待收材料</button>
+                </view>
+            </view>
+        </view>
+        <view class="item" hover-class="none" hover-stop-propagation="false">
+            <i-panel title="">
+                <view style="padding: 10px;">
+                    <view class="express" hover-class="none" hover-stop-propagation="false">
+                        PANEL 内容区域
+                    </view>
+                </view>
+            </i-panel>
+        </view>
+    </view>
+</template>
